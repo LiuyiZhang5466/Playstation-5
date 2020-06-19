@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Boilerplate</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png"/>
+        <!--<script async defer-->
+                <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtVOLy05n8lNzitxPIDVei6Q4oCqvfLlw&callback=initMap"></script>-->
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=GTqhNAPTeAABnVGbPXz10IrkSex6Gtoy">
+        </script>
+        <!--<script>-->
+            <!--(function(exports) {-->
+                <!--function initMap() {-->
+                    <!--exports.map = new google.maps.Map(document.getElementById("map"), {-->
+                        <!--center: {-->
+                            <!--lat: -25.344,-->
+                            <!--lng: 131.036-->
+                        <!--},-->
+                        <!--zoom: 4-->
+                    <!--});-->
+                <!--}-->
+                <!--exports.initMap = initMap;-->
+            <!--})((this.window = this.window || {}));-->
+        <!--</script>-->
+    </head>
+    <body id="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-top fixed-top py-3 " id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger navbar-a" href="#navigation-bar">
+                    <img class="navbar-img" src="../assets/img/monash-logo.png" alt="logo"/>
+                </a>
+                <button class="navbar-toggler-button navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon-span"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#new-products">New products</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#more-products">Historical products</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#products-data">Detail</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map-data">Retails Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead">
+            <div class="container-div height-100">
+                <div class="row-div height-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">PlayStation </h1>
+                        <h1 class="text-uppercase text-white font-weight-bold">（Playstation game console series from Sony.）</h1>
+                        <hr class="divider my-4"/>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">
+                            Playstation is Sony's first home TV entertainment platform launched in 1994. In the few years since its launch, PS has not only successfully defeated the SS series consoles of Sega Corporation of Japan, but also become a generation of overlords in the gaming industry.</p>
+                        <a class="btn btn-primary-a btn-xl js-scroll-trigger" href="#new-products">New Products</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section  " id="new-products">
+            <div class="container-fluid p-0">
+                <div class="row-div no-gutters">
+                    <div class="col-lg-7 col-sm-6">
+                        <img class="img-fluid" src="../assets/img/bg-section.jpg" alt=""/>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 row1">
+                        <h3 class="h4 mb-2">PlayStation 5</h3>
+                        <p class="text-muted mb-0">The PlayStation 5 (officially abbreviated as PS5) is an upcoming home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, it is scheduled to launch in late 2020. The platform is anticipated to launch in two varieties, as a base PlayStation 5 system incorporating a Blu-ray compatible optical disc drive for retail game support alongside digital distribution via the PlayStation Store, and a lower-cost Digital variant lacking the disc drive while retaining digital download support.</p>
+                        <div class="col-lg-8 text-center">
+                            <hr class="divider my-4"/>
+                            <a class="btn btn-light-a btn-xl js-scroll-trigger" href="#more-products">Historical products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="more-products">
+            <div class="container-fluid p-0">
+                <div class="row-div no-gutters">
+                    <div class="portfolio-box col-lg-6 col-sm-6" id="PS1" onclick="getJson(1)">
+                        <img class="img-fluid" src="../assets/img/portfolio/thumbnails/ps1.jpg" alt=""/>
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">PS1</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-box col-lg-6 col-sm-6" id="PS2" onclick="getJson(2)">
+                        <img class="img-fluid" src="../assets/img/portfolio/thumbnails/ps2.jpg" alt=""/>
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">PS2</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-box col-lg-6 col-sm-6" id="PS3" onclick="getJson(3)">
+                        <img class="img-fluid" src="../assets/img/portfolio/thumbnails/ps3.jpg" alt=""/>
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">PS3</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-box col-lg-6 col-sm-6" id="PS4" onclick="getJson(4)">
+                        <img class="img-fluid" src="../assets/img/portfolio/thumbnails/ps4.jpg" alt=""/>
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">PS4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="page-section bg-dark text-white" id="products-data">
+            <div class="container-fluid p-0">
+                <h2 class="mt-0 text-center">Detail</h2>
+                <div class="row-div no-gutters navbar-collapse" id="data-details">
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid bg-dark p-0 text-white"  id="map-data">
+            <div class="container-fluid p-0">
+                <h2 class="mt-0 text-center">Retails Map</h2>
+                <div id="map" class="text-center"></div>
+            </div>
+        </div>
+    <script type="text/javascript">
+        var getJson = function (num) {
+            $.ajax({
+                //json文件位置
+                url: "../../assets/json/PS" + num + ".json",
+                type: "GET",
+                //返回数据格式为json
+                dataType: "json",
+                success: function (data) {
+                    var html = "";
+                    $("#data-details").empty();
+                    $.each(data, function (i, item) {
+                        html += ' <div class="data-col-lg-6 col-sm-6 text-center"><p class="text-light mb-0">' + item.project + '</p></div>';
+                        html += ' <div class="data-col-lg-6 col-sm-6 text-center"><p class="text-light mb-0">' + item.parameter + '</p></div>';
+                    });
+                    html += ' <a id="products-data-a" class="js-scroll-trigger" href="#products-data"></a>';
+                    $("#data-details").append(html);
+                    document.getElementById("products-data-a").click();
+                }
+            })
+        }
+    </script>
+        <script type="text/javascript">
+            var map = new BMapGL.Map("map");
+            // 创建地图实例
+            var point = new BMapGL.Point(145.036, -38.344);
+            // 创建点坐标
+            map.centerAndZoom(point, 15);
+            // 初始化地图，设置中心点坐标和地图级别
+        </script>
+    </body>
+</html>
